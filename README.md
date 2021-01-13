@@ -1,3 +1,3 @@
 # PyMan
-## A text-based hangman game made in Python
-### Created by Gamal Mohamed
+#### A text-based hangman game made in Python
+###### Created by Gamal Mohamed
