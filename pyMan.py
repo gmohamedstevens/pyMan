@@ -24,7 +24,6 @@ def show_game_prompt():
     print("Number of tries left: ", tries_left)
     print("The word: ", display_word)
     print("Already guessed letters: ", guessed_letters)
-    print()
     return input("Please guess a letter: ")
 
 # Return if the passed letter is contained in the passed word
@@ -60,6 +59,7 @@ while True: # Begin main loop
     while tries_left > 0 and not player_won: # While there are tries left and the player hasn't won, keep playing
         # Display the current game state
         letter_guess = show_game_prompt().lower() # Convert player guess to lower case
+        print()
         if valid_guess_made():
             guessed_letters = guessed_letters + letter_guess + " " # Add guessed letter to list
             if letter_is_in_word(letter_guess, secret_word):
